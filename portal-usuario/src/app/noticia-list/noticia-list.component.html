@@ -1,0 +1,10 @@
+<div class="container mt-5">
+  <h1>Notícias</h1>
+  <div *ngFor="let noticia of noticias" class="card my-3">
+    <div class="card-body">
+      <h5 class="card-title">{{ noticia.titulo }}</h5>
+      <p class="card-text">{{ noticia.corpo }}</p>
+      <a [routerLink]="['/noticia', noticia.id]" class="btn btn-primary">Ler mais</a>
+    </div>
+  </div>
+</div>

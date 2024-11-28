@@ -1,0 +1,56 @@
+<div class="container mt-5">
+  <div class="text-center mb-4">
+    <a href="/noticias">
+      <h1 class="display-4 fw-bold text-primary">Bem-vindo ao Portal de Notícias</h1>
+    </a>
+    <p class="lead text-secondary">
+      Fique por dentro das últimas novidades e atualizações.
+    </p>
+  </div>
+  
+<!-- Categorias -->
+<div class="row justify-content-center mt-4">
+  <div class="col-md-8">
+    <div class="card shadow-sm border-0" style="background-color: #f8f9fa;"> <!-- Fundo leve -->
+      <div class="card-body text-center">
+        <h5 class="text-dark">Explore nossas categorias</h5>
+        <p class="text-muted" style="font-size: 0.85rem;">Selecione uma categoria para explorar artigos relacionados.</p>
+        
+        <!-- Lista de Categorias -->
+        <div class="row mt-3 g-3">
+          <div *ngFor="let categoria of categorias" class="col-6 col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm border-0" style="background-color: #ffffff; border: 1px solid #dee2e6; border-radius: 0.5rem;">
+              <div class="card-body p-2 text-center">
+                <h6 class="card-title text-primary mb-2" style="font-size: 1.0rem; font-weight: 500;">{{ categoria.nome }}</h6>
+                <a href="/categoria/{{ categoria.id }}/noticias" class="btn btn-outline-primary btn-sm">
+                  Ver artigos
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da Lista de Categorias -->
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Lista de Categorias -->
+<!-- <div class="row mt-3 g-2">
+  <div *ngFor="let categoria of categorias" class="col-6 col-md-4 col-lg-3">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body p-2 text-center">
+        <h6 class="card-title text-primary mb-1" style="font-size: 0.9rem;">{{ categoria.nome }}</h6>
+        <p class="card-text text-muted" style="font-size: 0.75rem;">{{ categoria.descricao }}</p>
+        <a href="/categoria/{{ categoria.id }}/noticias" class="btn btn-secondary btn-sm">
+          Ver artigos
+        </a>  
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="container mt-5">
+  <router-outlet></router-outlet>
+</div>

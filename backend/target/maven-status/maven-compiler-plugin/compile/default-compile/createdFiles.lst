@@ -1,0 +1,10 @@
+br\com\guilhermevillaca\loja\repository\UsuarioRepository.class
+br\com\guilhermevillaca\loja\controller\UsuarioController.class
+br\com\guilhermevillaca\loja\model\Categoria.class
+br\com\guilhermevillaca\loja\controller\CategoriaController.class
+br\com\guilhermevillaca\loja\CorsFilter$1.class
+br\com\guilhermevillaca\loja\model\TipoUsuario.class
+br\com\guilhermevillaca\loja\CorsFilter.class
+br\com\guilhermevillaca\loja\model\Usuario.class
+br\com\guilhermevillaca\loja\repository\CategoriaRepository.class
+br\com\guilhermevillaca\loja\LojaApplication.class
